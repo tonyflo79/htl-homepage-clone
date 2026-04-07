@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Title Lock — Cyber Defense for Your Home's Most Valuable Asset</title>
+  <meta name="description" content="Enterprise-grade cyber defense for your home's ownership records. Continuous cyber monitoring, real-time threat detection, and up to $1M in funded restoration support. 14-day free trial.">
+  <meta property="og:title" content="Home Title Lock — Cyber Defense for Your Home">
+  <meta property="og:description" content="Cyber Defense for Your Home's Most Valuable Asset. Continuous monitoring. Real-time alerts. $1M funded restoration.">
+  <meta property="og:image" content="images/fb-og-image-htl-1.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'CircularXX';
+      src: url('fonts/circular/CircularXXWeb-Light.woff2') format('woff2');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'CircularXX';
+      src: url('fonts/circular/CircularXXWeb-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'CircularXX';
+      src: url('fonts/circular/CircularXXWeb-Book.woff2') format('woff2');
+      font-weight: 450;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'CircularXX';
+      src: url('fonts/circular/CircularXXWeb-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'CircularXX';
+      src: url('fonts/circular/CircularXXWeb-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'CircularXX';
+      src: url('fonts/circular/CircularXXWeb-Italic.woff2') format('woff2');
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'CircularXX';
+      src: url('fonts/circular/CircularXXWeb-LightItalic.woff2') format('woff2');
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'CircularXX', 'Inter', system-ui, -apple-system, sans-serif; }
+
+    /* FAQ Accordion */
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding-top: 0; padding-bottom: 0; }
+    .faq-item.open .faq-answer { max-height: 600px; padding-top: 1rem; padding-bottom: 0.5rem; }
+    .faq-item .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    /* Translucent card */
+    .card-translucent { background: rgba(255,255,255,0.07); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); }
+
+    /* Gold stars */
+    .star-gold { color: #ebca62; }
+
+    /* Hero overlay gradient */
+    .hero-overlay { background: linear-gradient(to bottom, rgba(1,32,48,0.85) 0%, rgba(1,32,48,0.95) 60%, #012030 100%); }
+
+    /* CTA button gradient */
+    .cta-primary {
+      background: linear-gradient(to bottom right, #3bc14a, #1ba82b);
+      transition: all 0.3s ease;
+    }
+    .cta-primary:hover {
+      background: linear-gradient(to bottom right, #3bc14a, #11851e);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 25px rgba(59, 193, 74, 0.35);
+    }
+
+    /* Editorial pull quote */
+    .pull-quote { border-left: 4px solid #3bc14a; }
+
+    /* Comparison table */
+    .compare-table th { background: #012030; color: white; }
+    .compare-table td { border-bottom: 1px solid #e5e7eb; }
+
+    /* Accordion hover */
+    .faq-item:hover { background: rgba(255,255,255,0.03); }
+
+    /* Cyber Protected badge */
+    .cyber-badge { display: inline-flex; align-items: center; gap: 0.25rem; background: rgba(59,193,74,0.1); color: #3bc14a; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.2rem 0.5rem; border-radius: 9999px; }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': '#012030',
+            'navy-mid': '#244150',
+            'brand': '#003049',
+            'accent-green': '#35BC44',
+            'cta-green': '#3bc14a',
+            'gold': '#ebca62',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#fafbfe] text-gray-900 antialiased">
+
+<!-- ============================================ -->
+<!-- NAVIGATION -->
+<!-- ============================================ -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+  <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20">
+    <a href="#" class="flex items-center gap-2">
+      <img src="images/home-title-lock-logo-footer.png" alt="Home Title Lock" class="h-8 sm:h-10">
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-light text-gray-700">
+      <a href="#how-it-works" class="hover:text-brand transition-colors">How It Works</a>
+      <a href="#pricing" class="hover:text-brand transition-colors">Pricing</a>
+      <a href="#faq" class="hover:text-brand transition-colors">FAQ</a>
+      <a href="#testimonials" class="hover:text-brand transition-colors">Reviews</a>
+    </div>
+    <a href="#pricing" class="cta-primary text-white text-xs sm:text-sm font-semibold uppercase tracking-widest rounded px-4 sm:px-6 py-3 inline-block">
+      Get Cyber Protected
+    </a>
+  </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16 sm:h-20"></div>
+
+<!-- ============================================ -->
+<!-- SECTION 1: ABOVE-FOLD (HERO) — VARIANT B -->
+<!-- ============================================ -->
+<section id="hero" class="relative overflow-hidden">
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <img src="images/iStock-1436225719.2307240824213-w3840.jpg" alt="A well-maintained American residential home" class="w-full h-full object-cover" loading="eager">
+    <div class="hero-overlay absolute inset-0"></div>
+  </div>
+
+  <div class="relative max-w-[1280px] mx-auto px-6 lg:px-8 pt-16 sm:pt-24 pb-20 sm:pb-32">
+    <div class="max-w-4xl">
+      <!-- Pre-head -->
+      <p class="text-accent-green text-sm sm:text-base font-medium uppercase tracking-widest mb-6">
+        Enterprise-Grade Cyber Defense — Built for Homeowners
+      </p>
+
+      <!-- Headline -->
+      <h1 class="text-white drop-shadow-lg mb-8">
+        <span class="block text-2xl sm:text-3xl lg:text-[42px] font-medium leading-tight mb-3">
+          Cyber Defense for Your Home's Most Valuable Asset
+        </span>
+        <span class="block text-lg sm:text-xl lg:text-2xl font-light text-accent-green tracking-wide">
+          Continuous Monitoring. Real-Time Alerts. Funded Restoration.
+        </span>
+      </h1>
+
+      <!-- Deck copy -->
+      <p class="text-gray-300 text-base sm:text-lg lg:text-xl font-light leading-relaxed max-w-3xl mb-10">
+        AI-generated forgeries surged from 500,000 incidents in 2023 to a projected 8 million by 2025. The county system that records your deed still doesn't verify identities. Home Title Lock's TripleLock cyber defense system monitors, detects, and responds — backed by up to $1M in restoration support.
+      </p>
+
+      <!-- CTA Group -->
+      <div class="flex flex-col sm:flex-row items-start gap-4 mb-6">
+        <a href="#pricing" class="cta-primary text-white font-semibold uppercase tracking-widest rounded px-8 py-5 text-sm sm:text-base text-center inline-block">
+          Get Cyber Protected Today
+        </a>
+        <a href="#threat-landscape" class="text-gray-400 hover:text-white text-sm sm:text-base font-light underline underline-offset-4 pt-4 sm:pt-5 transition-colors">
+          See the Cyber Threat to Home Equity &rarr;
+        </a>
+      </div>
+      <p class="text-gray-500 text-sm font-light">5-minute setup. No credit card required.</p>
+    </div>
+  </div>
+
+  <!-- Trust Bar -->
+  <div class="relative bg-[#244150] border-t border-white/10">
+    <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div class="flex items-center gap-3">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 shadow-lg">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <span class="text-gray-100 text-sm font-light">14-Day Free Trial</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 shadow-lg">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="text-gray-100 text-sm font-light">Up to $1M Cyber Restoration</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 shadow-lg">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21"/></svg>
+          </div>
+          <span class="text-gray-100 text-sm font-light">6 States Passed Cyber Fraud Laws</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 shadow-lg">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="text-gray-100 text-sm font-light">Cyber Threat Detection in Hours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 2: LEAD — VARIANT B -->
+<!-- ============================================ -->
+<section id="lead" class="bg-white">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-lg sm:text-xl lg:text-2xl font-light text-gray-800 leading-relaxed mb-8">
+        Your home's ownership record sits inside a digital filing system that anyone can access and nobody guards.
+      </p>
+
+      <div class="prose prose-lg max-w-none text-gray-700 font-light leading-relaxed space-y-6">
+        <p>The county recorder's office where your deed is filed went digital years ago. Every county in America now accepts electronic document filings. A deed transfer can be submitted online, processed in minutes, and recorded as the official ownership record of your property.</p>
+
+        <p>That part worked. <strong class="font-medium text-gray-900">The part that didn't: identity verification.</strong></p>
+
+        <p>Nobody at the county recorder's office checks the identity of the person filing a deed transfer. Nobody verifies that the notary stamp is genuine. Nobody calls you to ask whether you actually agreed to transfer ownership of your home. The document is accepted, recorded, and published as the official record — without a single identity authentication checkpoint in the process.</p>
+
+        <p>This is not a glitch in one county's software. It is a systemic cyber vulnerability in how property ownership is documented across the entire United States. The recording system was built for a world where documents were hand-carried to a clerk's window by people who lived in the community. When counties moved to electronic filing, they digitized the process. They did not add cybersecurity.</p>
+
+        <p>Think about what that means in a digital threat environment. A cyber criminal in another state could download a blank deed form, generate an AI-forged notary stamp, and submit it to your county recorder's office through an online portal. The document would be accepted. Recorded. Published as an official public record. And you would not know it happened.</p>
+
+        <p>That digital vulnerability — between what homeowners assume is cyber-protected and what actually is — is what six state legislatures have been scrambling to address. In 2024 and 2025, states began passing emergency title fraud legislation. The FBI has classified cyber-enabled title fraud as a distinct crime category. Three state attorneys general have launched investigations.</p>
+
+        <p><strong class="font-medium text-gray-900">The institutions are responding. But the digital recording systems themselves have not changed.</strong></p>
+
+        <p>So what happens when a fraudulent deed is filed against your home — and no cyber defense is watching?</p>
+
+        <p>Here is where the math gets uncomfortable. A forged deed is legally void. The law says you still own your property. That sounds reassuring — until you learn what "proving it" costs.</p>
+
+        <p>Families who discover a fraudulent filing months or years after it was recorded face legal battles that run <strong class="font-medium text-gray-900">$50,000 to $150,000.</strong> The average resolution stretches across two to five years. But families who discover the same crime within hours of the filing — through continuous cyber monitoring — face a radically different timeline. One family's cyber defense system flagged the filing within hours. Within two weeks, the deed was restored to her parents' name. Same crime. Same legal system. A fraction of the cost and time.</p>
+
+        <p>The difference was not the law. The difference was <strong class="font-medium text-gray-900">whether a cyber defense system was watching</strong> — and what happened next.</p>
+
+        <p class="text-gray-800 text-lg font-normal">What creates that difference is a purpose-built cyber defense system that most homeowners do not know exists. And it is what this page will show you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 3: STORY — VARIANT B -->
+<!-- ============================================ -->
+<section id="stories" class="bg-navy">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto mb-12">
+      <p class="text-gray-400 text-sm uppercase tracking-widest mb-4 font-medium">Cyber-Enabled Property Crime: The Human Cost</p>
+      <p class="text-gray-300 font-light text-base sm:text-lg leading-relaxed">
+        Cyber-enabled title fraud isn't theoretical. It starts in the digital layer of a county recording system that accepts electronic filings without identity authentication — and it ends with real families losing property they worked decades to own.
+      </p>
+      <p class="text-gray-300 font-light text-base sm:text-lg leading-relaxed mt-4">
+        Three cases. Two homeowners with no cyber defense in place. One family that had it. The outcomes diverge at the exact point where digital monitoring either existed or didn't.
+      </p>
+    </div>
+
+    <!-- Story Cards -->
+    <div class="max-w-4xl mx-auto space-y-8">
+
+      <!-- Story 1: Omar -->
+      <div class="card-translucent rounded-md p-6 sm:p-8 lg:p-10">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="text-red-400 text-xs font-semibold uppercase tracking-widest bg-red-400/10 px-3 py-1 rounded-full">Victim Story</div>
+          <span class="text-gray-500 text-sm font-light">CBS Boston</span>
+        </div>
+        <p class="text-gray-200 font-light leading-relaxed mb-4">
+          Cyber-enabled property fraud starts in the digital layer of the public record system. For Omar Jakari, it ended with the loss of his family's home.
+        </p>
+        <p class="text-gray-200 font-light leading-relaxed mb-4">
+          Omar saved for years to buy a house in the Boston suburbs. A yard for his kids. A front door that was theirs.
+        </p>
+        <p class="text-gray-200 font-light leading-relaxed mb-4">
+          Someone exploited the county's digital filing system — no identity verification, no authentication checkpoint, no fraud detection — and filed a forged deed transferring his property to a stranger. The digital vulnerability that allowed it is the same one present in every county that moved to electronic recording without upgrading security protocols.
+        </p>
+        <p class="text-gray-200 font-light leading-relaxed mb-6">
+          CBS Boston investigated his case as part of an expanding pattern of cyber-enabled property fraud — homeowners discovering that digitally filed forged deeds had transferred their property without a single identity verification checkpoint in the recording process.
+        </p>
+        <blockquote class="pull-quote pl-6 py-2">
+          <p class="text-white text-lg sm:text-xl font-medium italic">"They stole our dream."</p>
+          <cite class="text-gray-400 text-sm not-italic mt-2 block">— Omar Jakari, CBS Boston</cite>
+        </blockquote>
+      </div>
+
+      <!-- Story 2: Rose -->
+      <div class="card-translucent rounded-md p-6 sm:p-8 lg:p-10">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="text-red-400 text-xs font-semibold uppercase tracking-widest bg-red-400/10 px-3 py-1 rounded-full">Victim Story</div>
+          <span class="text-gray-500 text-sm font-light">AARP</span>
+        </div>
+        <p class="text-gray-200 font-light leading-relaxed mb-4">
+          Rose Stein is 75 years old. She owned her home outright — no mortgage, no liens, decades of equity built and settled.
+        </p>
+        <p class="text-gray-200 font-light leading-relaxed mb-4">
+          The same digital vulnerability that exposed Omar Jakari's property exposed hers. Someone forged her identity on a deed and leveraged her property records to take out a loan against her home. Rose had no cyber monitoring in place. No alert system. No early detection. She found out when the collection notices arrived.
+        </p>
+        <p class="text-gray-200 font-light leading-relaxed mb-6">
+          AARP covered her case because it captured what cybersecurity professionals already knew: digitized public records without proper authentication create a systemic vulnerability for older homeowners — the demographic least likely to have digital monitoring in place.
+        </p>
+        <blockquote class="pull-quote pl-6 py-2">
+          <p class="text-white text-lg sm:text-xl font-medium italic">"I'm crying every day. I don't know what to do."</p>
+          <cite class="text-gray-400 text-sm not-italic mt-2 block">— Rose Stein, age 75, AARP</cite>
+        </blockquote>
+      </div>
+
+      <!-- Story 3: Resolution -->
+      <div class="card-translucent rounded-md p-6 sm:p-8 lg:p-10 border-accent-green/30">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="text-accent-green text-xs font-semibold uppercase tracking-widest bg-accent-green/10 px-3 py-1 rounded-full">Cyber Defense Resolution</div>
+          <span class="text-gray-500 text-sm font-light">Home Title Lock Customer</span>
+        </div>
+        <p class="text-gray-200 font-light leading-relaxed mb-4">
+          One family had cyber defense active when Home Title Lock's monitoring engine detected an unauthorized filing on their parents' property records.
+        </p>
+        <p class="text-gray-200 font-light leading-relaxed mb-4">
+          The system worked exactly as designed. Cyber Monitoring flagged the anomalous document. A Real-Time Cyber Alert notified the account holder. The Cyber Restoration team deployed an attorney to challenge the forged deed immediately.
+        </p>
+        <blockquote class="pull-quote pl-6 py-2 border-accent-green">
+          <p class="text-white text-lg sm:text-xl font-medium italic">"Within about two weeks the deed was put back in my parents' name."</p>
+          <cite class="text-gray-400 text-sm not-italic mt-2 block">— Home Title Lock customer</cite>
+        </blockquote>
+        <p class="text-accent-green font-medium text-sm mt-4">
+          Two weeks. Not two years of litigation. Not $150,000 in legal fees. The difference between Rose Stein's outcome and this family's outcome is one variable: whether a cyber defense system was monitoring the digital property records before the fraud escalated.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 4: EARLY PROOF BLOCK — VARIANT B -->
+<!-- ============================================ -->
+<section id="authority" class="bg-[#fafbfe]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-12">
+      <p class="text-brand text-sm uppercase tracking-widest font-medium mb-4">The Cyber Threat Is Recognized</p>
+      <p class="text-gray-600 font-light text-base sm:text-lg max-w-2xl mx-auto">Those stories are the human cost of a systemic digital vulnerability. Here is how the institutions responsible for property protection have responded to the cyber threat.</p>
+    </div>
+
+    <!-- Authority signals -->
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-start gap-4">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 mt-1">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21"/></svg>
+          </div>
+          <div>
+            <p class="font-medium text-gray-900 mb-1">6 States Passed Emergency Cyber Fraud Legislation</p>
+            <p class="text-gray-600 text-sm font-light leading-relaxed">Including New York, Florida, and California — recognizing cyber-enabled title fraud as a systemic digital threat requiring legislative response.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-start gap-4">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 mt-1">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>
+          </div>
+          <div>
+            <p class="font-medium text-gray-900 mb-1">FBI Classified as Distinct Cyber Crime Category</p>
+            <p class="text-gray-600 text-sm font-light leading-relaxed">Property deed cyber fraud identified as a growing digital threat requiring dedicated law enforcement attention.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-start gap-4">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 mt-1">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"/></svg>
+          </div>
+          <div>
+            <p class="font-medium text-gray-900 mb-1">State Attorney General Cyber Fraud Investigations</p>
+            <p class="text-gray-600 text-sm font-light leading-relaxed">NY AG Letitia James has taken action on cyber-enabled property fraud affecting homeowners, reinforcing it as a recognized digital threat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-start gap-4">
+          <div class="rounded-full bg-accent-green p-2 flex-shrink-0 mt-1">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 6.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+          </div>
+          <div>
+            <p class="font-medium text-gray-900 mb-1">Federal FinCEN Beneficial Ownership Rule</p>
+            <p class="text-gray-600 text-sm font-light leading-relaxed">Treasury Department signals federal recognition that property ownership records are a cybersecurity vulnerability requiring stronger digital protections.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Media Logo Strip -->
+    <div class="text-center">
+      <p class="text-gray-500 text-xs uppercase tracking-widest font-medium mb-8">As reported by</p>
+      <div class="flex items-center justify-center gap-6 sm:gap-10 flex-wrap opacity-60 grayscale">
+        <img src="images/featured-on/cbs-w384.jpg" alt="CBS" class="h-8 sm:h-10 object-contain">
+        <img src="images/featured-on/nbc-w384.jpg" alt="NBC" class="h-8 sm:h-10 object-contain">
+        <img src="images/featured-on/abc-w128.jpg" alt="ABC" class="h-8 sm:h-10 object-contain">
+        <img src="images/featured-on/fox-w640.png" alt="Fox" class="h-8 sm:h-10 object-contain">
+        <img src="images/featured-on/ktla5-w384.jpg" alt="KTLA" class="h-8 sm:h-10 object-contain">
+        <img src="images/featured-on/wgn9-w384.jpg" alt="WGN" class="h-8 sm:h-10 object-contain">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 5: THE CYBER THREAT LANDSCAPE — VARIANT B -->
+<!-- ============================================ -->
+<section id="threat-landscape" class="bg-white">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-medium text-gray-900 mb-4">The Cyber Threat Landscape: Why Your Home's Digital Records Are Under Attack</h2>
+      <p class="text-gray-500 text-base font-light mb-12">Public record systems were never built for the digital age. Cyber criminals know it.</p>
+
+      <div class="space-y-6 text-gray-700 font-light leading-relaxed">
+        <p>Cyber-enabled title fraud — title fraud that happens because criminals exploit online public records — is not a hypothetical threat. It is a documented, growing category of digital crime that targets the single largest asset most Americans own.</p>
+
+        <p>Here is the vulnerability at the center of it.</p>
+
+        <p>The county recorder who files your deed does not check identities. Nobody verifies that the notarization is valid. Ever. Your home's ownership record sits inside a digital filing system that anyone can access and nobody guards.</p>
+
+        <blockquote class="pull-quote pl-6 py-3 my-8">
+          <p class="text-gray-800 text-lg font-medium italic">"Nobody ever checks that the notarization is valid. Ever."</p>
+          <cite class="text-gray-500 text-sm not-italic mt-2 block">— Fred C. Dobbs, litigation attorney</cite>
+        </blockquote>
+
+        <p>The California Department of Real Estate confirmed the process in plain terms: "You just walk in and hand the document to the clerk." No identity check. No verification that the person filing the document is the actual property owner.</p>
+
+        <p>The digital infrastructure that stores proof of homeownership was built decades before identity verification became a standard cybersecurity practice. Banks verify identity before processing a wire transfer. Credit card companies flag suspicious transactions in real time. Your county recorder does neither.</p>
+      </div>
+
+      <!-- AI Forgery Data Callout -->
+      <div class="my-10 bg-navy rounded-md p-6 sm:p-8 text-center">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+          <div>
+            <p class="text-3xl sm:text-4xl font-bold text-white">500K</p>
+            <p class="text-gray-400 text-sm font-light">AI-forged documents<br>tracked in 2023</p>
+          </div>
+          <div class="text-accent-green text-3xl font-light">&rarr;</div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-bold text-accent-green">8M</p>
+            <p class="text-gray-400 text-sm font-light">Projected by 2025<br>16x increase</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-6 text-gray-700 font-light leading-relaxed">
+        <p>Perry Carpenter, a cybersecurity expert who testified before the SEC in March 2025, described the shift directly: "AI is fundamentally transforming financial fraud — making sophisticated scams more accessible, scalable, and convincing than at any point in history."</p>
+
+        <p>A CertifID industry survey found that 54% of real estate professionals reported at least one seller impersonation fraud attempt. More than half.</p>
+
+        <p>Six states have responded with emergency title fraud legislation. FinCEN's Beneficial Ownership rule signals federal recognition that digital property crime is systemic, not isolated.</p>
+
+        <p class="text-lg text-gray-800 font-normal mt-10">If you assume your existing protections cover this cyber threat, examine what they actually do.</p>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="my-10 overflow-x-auto">
+        <table class="compare-table w-full text-sm border-collapse rounded-md overflow-hidden">
+          <thead>
+            <tr>
+              <th class="text-left px-4 py-3 font-medium">Protection</th>
+              <th class="text-left px-4 py-3 font-medium">What It Covers</th>
+              <th class="text-left px-4 py-3 font-medium">The Cyber Gap</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700 font-light">
+            <tr class="bg-white">
+              <td class="px-4 py-4 font-medium text-gray-900">Title Insurance</td>
+              <td class="px-4 py-4">Defects that existed <em>before</em> you bought — liens, clerical errors, unknown heirs</td>
+              <td class="px-4 py-4 text-red-600">Looks backward. Does not monitor, alert, or respond to cyber-enabled fraud after closing.</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-4 py-4 font-medium text-gray-900">County Alerts</td>
+              <td class="px-4 py-4">Notification that a document was filed</td>
+              <td class="px-4 py-4 text-red-600">Delayed days/weeks. No verification. No cyber threat analysis. No response team.</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-4 font-medium text-gray-900">Identity Theft Services</td>
+              <td class="px-4 py-4">Credit reports, SSN, financial accounts</td>
+              <td class="px-4 py-4 text-red-600">Do not monitor property records. Your deed is outside their coverage entirely.</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-4 py-4 font-medium text-gray-900">Doing Nothing</td>
+              <td class="px-4 py-4">A forged deed is legally void — you still own your home</td>
+              <td class="px-4 py-4 text-red-600">Proving it costs $50K–$150K and takes 2–5 years without early detection.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-6 text-gray-700 font-light leading-relaxed">
+        <p>The cyber threat landscape facing homeowners is systemic, accelerating, and unaddressed by the tools most people rely on. Title insurance looks backward. County alerts arrive late. Identity services monitor the wrong records.</p>
+
+        <p class="text-lg text-gray-800 font-normal"><strong>What is needed is a purpose-built cyber defense</strong> — continuous monitoring of property databases, real-time threat detection, and funded expert response.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Micro-CTA 1 -->
+<div class="bg-[#fafbfe] py-6">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <p class="text-gray-600 font-light text-sm italic">Before we cover how the cyber defense process works, you should know you can <a href="#pricing" class="text-accent-green hover:underline font-medium">get cyber protected right now</a> — free, no credit card, 5 minutes.</p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 6: OUR CYBER DEFENSE PROCESS — VARIANT B -->
+<!-- ============================================ -->
+<section id="how-it-works" class="bg-navy">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-6">
+      <p class="text-accent-green text-sm uppercase tracking-widest font-medium mb-4">Our Cyber Defense Process</p>
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-4">How TripleLock Protects Your Property Records</h2>
+      <p class="text-gray-400 text-base sm:text-lg font-light max-w-2xl mx-auto">Three-stage cyber defense built for a threat that existing solutions were never designed to handle.</p>
+    </div>
+
+    <!-- Honesty anchor -->
+    <div class="max-w-3xl mx-auto mb-16">
+      <div class="card-translucent rounded-md p-6 sm:p-8 text-center">
+        <p class="text-gray-200 font-light leading-relaxed">
+          No cybersecurity system can prevent the initial filing. The county recording system accepts documents before verification. That is the core vulnerability. <strong class="text-white font-medium">No company — not Home Title Lock, not any competitor — can change how county offices operate.</strong>
+        </p>
+        <p class="text-gray-300 font-light leading-relaxed mt-4">
+          What determines the outcome is not prevention. It is <strong class="text-white">detection speed and response capability.</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- TripleLock 3-Step Visual -->
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="bg-accent-green/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-accent-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+          </div>
+          <p class="text-accent-green text-xs font-semibold uppercase tracking-widest mb-2">Step 1</p>
+          <h3 class="text-white text-lg font-medium mb-4">Proprietary Cyber Monitoring Engine</h3>
+          <p class="text-gray-300 font-light text-sm leading-relaxed">
+            Continuous scanning of national property databases — checking for unauthorized filings, suspicious ownership changes, and fraudulent lien activity against your property records. The monitoring engine operates around the clock because the county recording system never stops accepting documents. Suspicious activity is flagged within hours of appearing in the system.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="bg-accent-green/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-accent-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>
+          </div>
+          <p class="text-accent-green text-xs font-semibold uppercase tracking-widest mb-2">Step 2</p>
+          <h3 class="text-white text-lg font-medium mb-4">Real-Time Threat Detection and Alerts</h3>
+          <p class="text-gray-300 font-light text-sm leading-relaxed">
+            When the monitoring engine flags activity, the system analyzes it before generating a customer-facing alert. It compares activity against known attack patterns, administrative filing signatures, and legitimate transaction profiles. Routine activity is filtered. Genuine threats are escalated. When you receive a cyber alert, it means something genuinely suspicious has been detected.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="bg-accent-green/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-accent-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <p class="text-accent-green text-xs font-semibold uppercase tracking-widest mb-2">Step 3</p>
+          <h3 class="text-white text-lg font-medium mb-4">Elite Cyber Restoration Team</h3>
+          <p class="text-gray-300 font-light text-sm leading-relaxed">
+            When a verified cyber threat is confirmed, Home Title Lock deploys restoration specialists — an attorney and legal team who specialize in resolving fraudulent property filings. The response is backed by up to $1,000,000 in incident response support. One family's deed was restored in two weeks. The same crime that costs other families $150,000 was resolved in fourteen days.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed mechanism copy -->
+    <div class="max-w-3xl mx-auto mt-16 space-y-8">
+      <div class="card-translucent rounded-md p-6 sm:p-8">
+        <p class="text-gray-200 font-light leading-relaxed">
+          <strong class="text-white font-medium">Why detection speed determines the outcome:</strong> Free county alerts — where they exist — notify property owners days to weeks after a recording. That delay is the difference between a manageable incident and a six-figure legal battle. One customer tested the system directly and described the experience in a Trustpilot review: <em class="text-accent-green">"That was a great test. They are on the ball!"</em>
+        </p>
+      </div>
+      <div class="card-translucent rounded-md p-6 sm:p-8">
+        <p class="text-gray-200 font-light leading-relaxed">
+          <strong class="text-white font-medium">Why funded response completes the defense:</strong> Without a funded response team, a homeowner facing title fraud must find their own attorney, fund their own legal battle, and navigate a system that takes 2-5 years and costs $50,000 to $150,000. With Home Title Lock's Cyber Restoration, the attorney deploys immediately. The legal response is funded. <em class="text-accent-green">"Within about two weeks the deed was put back in my parents' name."</em>
+        </p>
+      </div>
+    </div>
+
+    <!-- Summary + CTA -->
+    <div class="max-w-3xl mx-auto mt-12 text-center">
+      <p class="text-gray-300 font-light leading-relaxed mb-4">Three stages. Continuous cyber monitoring catches the threat within hours. Real-time threat detection verifies it before you are contacted. An elite restoration team resolves it — backed by up to $1,000,000 in incident response support. This is the cyber defense process that collapses a $150,000 legal nightmare into a two-week resolution.</p>
+      <p class="text-gray-400 font-light text-sm italic mb-8">If you're ready to activate cyber defense, your free trial is below.</p>
+      <a href="#pricing" class="cta-primary text-white font-semibold uppercase tracking-widest rounded px-8 py-5 text-sm sm:text-base inline-block">
+        See Your Cyber Defense Options
+      </a>
+      <p class="text-gray-500 text-sm font-light mt-3">Plans start at $19.95/month. 14-day free trial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 7: MID-PAGE PROOF — VARIANT B -->
+<!-- ============================================ -->
+<section id="testimonials" class="bg-[#fafbfe]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-12">
+      <p class="text-brand text-sm uppercase tracking-widest font-medium mb-4">Cyber-Protected Homeowners Speak</p>
+      <p class="text-gray-600 font-light max-w-2xl mx-auto">Three defense pillars that work in sequence to detect, flag, and resolve unauthorized activity on your property records. Here's what that sounds like from the homeowners who have all three active right now.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex gap-1">
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="cyber-badge">Cyber Protected</span>
+        </div>
+        <p class="text-gray-700 font-light text-sm leading-relaxed mb-4">"<strong class="font-medium text-gray-900">Peace of mind.</strong> I love having some type of protection."</p>
+        <p class="text-gray-500 text-xs font-light">— Cyber-Protected Homeowner, Florida</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex gap-1">
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="cyber-badge">Cyber Protected</span>
+        </div>
+        <p class="text-gray-700 font-light text-sm leading-relaxed mb-4">"Knowing that Home Title Lock is <strong class="font-medium text-gray-900">watching 24/7</strong> allows me to sleep soundly at night."</p>
+        <p class="text-gray-500 text-xs font-light">— Steve Yaeger, Trustpilot</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex gap-1">
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="cyber-badge">Cyber Protected</span>
+        </div>
+        <p class="text-gray-700 font-light text-sm leading-relaxed mb-4">"I experienced a <strong class="font-medium text-gray-900">big sense of relief.</strong> It is nice to feel secure about the title and ownership of my largest/most valuable asset."</p>
+        <p class="text-gray-500 text-xs font-light">— Cyber-Protected Homeowner</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex gap-1">
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="cyber-badge">Cyber Protected</span>
+        </div>
+        <p class="text-gray-700 font-light text-sm leading-relaxed mb-4">"That was a great test. They are <strong class="font-medium text-gray-900">on the ball!</strong>"</p>
+        <p class="text-gray-500 text-xs font-light">— Cyber-Protected Homeowner</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <p class="text-gray-500 font-light text-sm mb-6">Join the homeowners who chose proactive cyber defense over uncertainty.</p>
+      <a href="#pricing" class="cta-primary text-white font-semibold uppercase tracking-widest rounded px-8 py-5 text-sm sm:text-base inline-block">
+        Launch Your Cyber Defense
+      </a>
+      <p class="text-gray-500 text-sm font-light mt-3">14-day free trial. Enterprise-grade monitoring from day one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 8: PRODUCT INTRO (HONEST ACTOR) — VARIANT B -->
+<!-- ============================================ -->
+<section id="product-intro" class="bg-white">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-2xl sm:text-3xl font-medium text-gray-900 mb-4">What Our Cyber Defense System Can and Cannot Do</h2>
+      <p class="text-gray-600 font-light">Transparency is the foundation of a credible cybersecurity provider.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="rounded-md border border-red-200 bg-red-50 p-6 sm:p-8">
+        <p class="text-red-600 font-semibold text-sm uppercase tracking-widest mb-4">What We Cannot Do</p>
+        <ul class="space-y-3 text-gray-700 font-light text-sm leading-relaxed">
+          <li class="flex gap-2"><span class="text-red-400 flex-shrink-0">&#x2717;</span> Prevent someone from filing a forged deed at your county recorder's office</li>
+          <li class="flex gap-2"><span class="text-red-400 flex-shrink-0">&#x2717;</span> Change how county recording systems process document filings</li>
+          <li class="flex gap-2"><span class="text-red-400 flex-shrink-0">&#x2717;</span> Guarantee that cyber-enabled title fraud will never target your property</li>
+          <li class="flex gap-2"><span class="text-red-400 flex-shrink-0">&#x2717;</span> Replace your title insurance — it covers a different risk category</li>
+        </ul>
+      </div>
+      <div class="rounded-md border border-green-200 bg-green-50 p-6 sm:p-8">
+        <p class="text-accent-green font-semibold text-sm uppercase tracking-widest mb-4">What Our Cyber Defense Does</p>
+        <ul class="space-y-3 text-gray-700 font-light text-sm leading-relaxed">
+          <li class="flex gap-2"><span class="text-accent-green flex-shrink-0">&#x2713;</span> Continuous cyber monitoring of national property databases for unauthorized filings</li>
+          <li class="flex gap-2"><span class="text-accent-green flex-shrink-0">&#x2713;</span> Real-time cyber threat detection with verified alerts — no false alarm panic</li>
+          <li class="flex gap-2"><span class="text-accent-green flex-shrink-0">&#x2713;</span> Elite restoration team deployment with up to $1,000,000 in incident response support</li>
+          <li class="flex gap-2"><span class="text-accent-green flex-shrink-0">&#x2713;</span> Collapse the detection-to-resolution timeline from years to weeks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 9: THREE CYBER DEFENSE PILLARS — VARIANT B -->
+<!-- ============================================ -->
+<section id="features" class="bg-navy">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-6">
+      <p class="text-accent-green text-sm uppercase tracking-widest font-medium mb-4">Inside the TripleLock System</p>
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-white mb-4">Three Cyber Defense Pillars</h2>
+      <p class="text-gray-400 text-base sm:text-lg font-light max-w-2xl mx-auto">Each pillar maps to a recognized cybersecurity function — built at enterprise grade, delivered for homeowners.</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-8 mt-12">
+      <!-- Pillar 1 -->
+      <div class="card-translucent rounded-md p-6 sm:p-8 lg:p-10">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="bg-accent-green/20 rounded-full p-2">
+            <svg class="w-6 h-6 text-accent-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+          </div>
+          <h3 class="text-white text-lg font-medium">Cyber Monitoring</h3>
+        </div>
+        <p class="text-accent-green text-sm font-medium mb-4">Proprietary scanning of national property databases</p>
+        <div class="text-gray-300 font-light text-sm leading-relaxed space-y-4">
+          <p>Home Title Lock's Cyber Monitoring engine operates on the same principle that banks use to protect financial accounts: continuous automated surveillance of digital records, with alerts triggered by unauthorized activity.</p>
+          <p>The difference is that banks built this protection into their systems decades ago. The county recording system that stores your property records never did. Documents are accepted and filed without identity verification.</p>
+          <p>The result: suspicious activity on your property records is detected within hours of appearing in the system. Not days. Not weeks. Hours.</p>
+          <p>Steve Yaeger, a verified Trustpilot reviewer: <em class="text-accent-green">"Knowing that Home Title Lock is watching 24/7 allows me to sleep soundly at night."</em></p>
+        </div>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="card-translucent rounded-md p-6 sm:p-8 lg:p-10">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="bg-accent-green/20 rounded-full p-2">
+            <svg class="w-6 h-6 text-accent-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>
+          </div>
+          <h3 class="text-white text-lg font-medium">Real-Time Cyber Alerts</h3>
+        </div>
+        <p class="text-accent-green text-sm font-medium mb-4">Instant notification of suspicious digital activity on your property records</p>
+        <div class="text-gray-300 font-light text-sm leading-relaxed space-y-4">
+          <p>Monitoring without intelligent alerting is noise. Property records change for legitimate reasons — refinances, boundary surveys, county corrections, tax reassessments.</p>
+          <p>Home Title Lock's Real-Time Cyber Alert system analyzes each flag before generating a customer-facing notification. It compares activity against known attack patterns, administrative filing signatures, and legitimate transaction profiles. Routine filings are filtered. Genuine threats are escalated.</p>
+          <p>When you receive a cyber alert from Home Title Lock, it is because the system has already determined that the activity is genuinely suspicious. Not a refinance. Not a county correction. A verified anomaly.</p>
+          <p>One customer's Trustpilot review: <em class="text-accent-green">"That was a great test. They are on the ball!"</em></p>
+        </div>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="card-translucent rounded-md p-6 sm:p-8 lg:p-10">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="bg-accent-green/20 rounded-full p-2">
+            <svg class="w-6 h-6 text-accent-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <h3 class="text-white text-lg font-medium">Cyber Restoration and Recovery</h3>
+        </div>
+        <p class="text-accent-green text-sm font-medium mb-4">Expert team with up to $1,000,000 in incident response support</p>
+        <div class="text-gray-300 font-light text-sm leading-relaxed space-y-4">
+          <p>Detection and alerts are only half of a complete cyber defense. Without a funded response capability, the homeowner must find their own attorney, fund their own legal battle — $50,000 to $150,000 over two to five years.</p>
+          <p>When a verified cyber threat is confirmed, Home Title Lock deploys a dedicated restoration team: an attorney and legal professionals who specialize in resolving fraudulent property filings. The response is backed by up to $1,000,000 in incident response support.</p>
+          <blockquote class="pull-quote pl-6 py-2 my-4 border-accent-green">
+            <p class="text-white text-lg font-medium italic">"Within about two weeks the deed was put back in my parents' name."</p>
+            <cite class="text-gray-400 text-sm not-italic mt-2 block">— Home Title Lock customer</cite>
+          </blockquote>
+          <p>Two weeks. Not two years. The $19.95 per month does not pay for notifications. It pays for the funded response team that turns a potential $150,000 legal nightmare into a two-week resolution.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="max-w-3xl mx-auto mt-12 text-center">
+      <p class="text-gray-300 font-light leading-relaxed mb-8">Three Cyber Defense Pillars. One integrated system. Enterprise-grade cyber defense, built for homeowners.</p>
+      <a href="#pricing" class="cta-primary text-white font-semibold uppercase tracking-widest rounded px-8 py-5 text-sm sm:text-base inline-block">
+        See Your Cyber Defense Options
+      </a>
+      <p class="text-gray-500 text-sm font-light mt-3">Plans start at $19.95/month. 14-day free trial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 10: PRICING BLOCK — VARIANT B -->
+<!-- ============================================ -->
+<section id="pricing" class="bg-[#fafbfe]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-6">
+      <h2 class="text-2xl sm:text-3xl font-medium text-gray-900 mb-4">Your Cyber Defense Investment</h2>
+      <p class="text-gray-600 font-light max-w-2xl mx-auto">A single cyber-enabled title fraud incident costs homeowners $50,000 to $150,000 in legal battles and two to five years in court. One family with Home Title Lock's cyber monitoring caught a fraudulent filing through our real-time alert system. Within two weeks, the deed was restored to their parents' name.</p>
+    </div>
+
+    <div class="max-w-lg mx-auto mt-12">
+      <!-- Pricing Card -->
+      <div class="bg-white rounded-md shadow-2xl border border-gray-100 overflow-hidden">
+        <!-- Header -->
+        <div class="bg-navy text-center py-8 px-6">
+          <p class="text-accent-green text-xs font-semibold uppercase tracking-widest mb-2">Cyber Defense Plan</p>
+          <div class="flex items-baseline justify-center gap-1">
+            <span class="text-white text-5xl font-bold">$19.95</span>
+            <span class="text-gray-400 font-light text-lg">/month</span>
+          </div>
+          <p class="text-gray-400 text-sm font-light mt-2">That's $0.66 per day</p>
+          <div class="mt-4 inline-block bg-accent-green/20 text-accent-green text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full">
+            14-Day Free Trial
+          </div>
+        </div>
+
+        <!-- Features -->
+        <div class="p-6 sm:p-8">
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <div class="rounded-full bg-accent-green p-1 flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <div>
+                <p class="font-medium text-gray-900 text-sm">Cyber Monitoring</p>
+                <p class="text-gray-500 text-xs font-light">Continuous scanning of national property databases for digital anomalies</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="rounded-full bg-accent-green p-1 flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <div>
+                <p class="font-medium text-gray-900 text-sm">Real-Time Cyber Alerts</p>
+                <p class="text-gray-500 text-xs font-light">Instant notification when suspicious activity targets your ownership records</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="rounded-full bg-accent-green p-1 flex-shrink-0 mt-0.5">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <div>
+                <p class="font-medium text-gray-900 text-sm">Cyber Restoration & Recovery</p>
+                <p class="text-gray-500 text-xs font-light">Expert response team with up to $1,000,000 in incident response support</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Cost comparison -->
+          <div class="bg-gray-50 rounded-md p-4 mb-8">
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500 font-light">Without cyber defense:</span>
+              <span class="text-red-600 font-medium">$50,000 – $150,000</span>
+            </div>
+            <div class="flex items-center justify-between text-sm mt-2">
+              <span class="text-gray-500 font-light">With Cyber Defense Plan:</span>
+              <span class="text-accent-green font-medium">$0.66/day</span>
+            </div>
+          </div>
+
+          <a href="#" class="cta-primary block text-center text-white font-semibold uppercase tracking-widest rounded px-8 py-5 text-sm sm:text-base">
+            Start Your Cyber Defense Trial
+          </a>
+          <p class="text-gray-500 text-xs font-light text-center mt-3">14 days free. $19.95/month after. Cancel anytime.</p>
+        </div>
+      </div>
+
+      <p class="text-gray-500 text-sm font-light text-center mt-8">
+        Every subscription includes the Cyber Defense Guarantee: up to $1,000,000 in restoration support if cyber-enabled fraud is detected on your title while you are a member.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 11: GUARANTEE BLOCK — VARIANT B -->
+<!-- ============================================ -->
+<section id="guarantee" class="bg-navy">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="mb-8">
+        <img src="images/money-back-w256.png" alt="Cyber Defense Guarantee Badge" class="mx-auto h-24 sm:h-28" loading="lazy">
+      </div>
+
+      <h2 class="text-2xl sm:text-3xl font-medium text-white mb-4">The Cyber Defense Guarantee</h2>
+      <p class="text-gray-400 font-light text-lg mb-8">Enterprise-Grade Incident Response for Your Home</p>
+
+      <div class="text-left space-y-6 text-gray-300 font-light leading-relaxed">
+        <p>Home Title Lock built its Cyber Defense Guarantee on a straightforward principle: if our system detects a threat, we do not send you a notification and wish you luck. We deploy.</p>
+
+        <p><strong class="text-white font-medium">Layer 1: Risk-Free Trial</strong><br>
+        Try the full TripleLock cyber defense system for 14 days — free. Access Cyber Monitoring, Real-Time Cyber Alerts, and Cyber Restoration & Recovery at no cost. No credit card required. If it is not what you expected, cancel during the trial and pay nothing.</p>
+
+        <p><strong class="text-white font-medium">Layer 2: $1,000,000 Incident Response</strong><br>
+        If cyber-enabled fraud is detected on your title while you are a subscriber, Home Title Lock deploys restoration specialists — attorneys and legal professionals who specialize in property fraud resolution — backed by up to $1,000,000 in incident response funding. This covers legal costs, court filings, and the expert work required to restore your deed.</p>
+
+        <p>One of our subscribers discovered a fraudulent filing through our alert system. Within two weeks, the deed was back in her parents' name. That is not a hypothetical. That is the Cyber Defense Guarantee working.</p>
+
+        <p class="text-accent-green font-medium text-lg text-center mt-8">That is the Cyber Defense Guarantee: enterprise-grade incident response for your home — detection, verification, and funded restoration backed by up to one million dollars.</p>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-6 mt-12">
+        <div class="flex items-center gap-2 bg-white/10 rounded-full px-5 py-2.5">
+          <svg class="w-5 h-5 text-accent-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          <span class="text-gray-200 text-sm font-light">14-Day Free Trial</span>
+        </div>
+        <div class="flex items-center gap-2 bg-white/10 rounded-full px-5 py-2.5">
+          <svg class="w-5 h-5 text-accent-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span class="text-gray-200 text-sm font-light">Up to $1M Cyber Restoration</span>
+        </div>
+        <div class="flex items-center gap-2 bg-white/10 rounded-full px-5 py-2.5">
+          <svg class="w-5 h-5 text-accent-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          <span class="text-gray-200 text-sm font-light">Cyber Defense Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 12: PRE-CLOSE PROOF — VARIANT B -->
+<!-- ============================================ -->
+<section id="pre-close-proof" class="bg-[#fafbfe]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-4">
+      <p class="text-brand text-sm uppercase tracking-widest font-medium mb-4">Homeowners Who Activated Cyber Defense</p>
+      <p class="text-gray-600 font-light max-w-2xl mx-auto">These homeowners didn't wait for a breach. They activated cyber defense before one happened.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12">
+      <!-- Card 1: Generational Property -->
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex gap-1">
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="cyber-badge">Cyber Protected</span>
+        </div>
+        <p class="text-gray-700 font-light text-sm leading-relaxed mb-4">"<strong class="font-medium text-gray-900">Land our family has owned for years</strong> was fraudulently sold on a popular real estate website."</p>
+        <p class="text-gray-500 text-xs font-light">— Cyber-Protected Homeowner</p>
+        <p class="text-gray-400 text-xs font-light mt-2 italic">Generational Property Cyber Defense</p>
+      </div>
+
+      <!-- Card 2: Digital Asset Defense -->
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex gap-1">
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="cyber-badge">Cyber Protected</span>
+        </div>
+        <p class="text-gray-700 font-light text-sm leading-relaxed mb-4">"I experienced a <strong class="font-medium text-gray-900">big sense of relief.</strong> It is nice to feel secure about the title and ownership of my largest/most valuable asset."</p>
+        <p class="text-gray-500 text-xs font-light">— Cyber-Protected Homeowner</p>
+        <p class="text-gray-400 text-xs font-light mt-2 italic">Digital Asset Defense</p>
+      </div>
+
+      <!-- Card 3: Continuous Monitoring -->
+      <div class="bg-white rounded-md shadow-lg border border-gray-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex gap-1">
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-gold fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="cyber-badge">Cyber Protected</span>
+        </div>
+        <p class="text-gray-700 font-light text-sm leading-relaxed mb-4">"Knowing that Home Title Lock is <strong class="font-medium text-gray-900">watching 24/7</strong> allows me to sleep soundly at night."</p>
+        <p class="text-gray-500 text-xs font-light">— Steve Yaeger, Trustpilot</p>
+        <p class="text-gray-400 text-xs font-light mt-2 italic">Continuous Cyber Monitoring</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <p class="text-gray-500 font-light text-sm">Informed homeowners. Proactive decisions. Each one determined that $19.95 a month for continuous cyber monitoring of their property records was a straightforward investment in protecting their most valuable digital asset.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Micro-CTA 4 -->
+<div class="bg-white py-6">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <p class="text-gray-500 font-light text-sm italic">Before we cover the most common questions homeowners ask, here's the short version: 14 days free, 5-minute setup, no credit card. <a href="#pricing" class="text-accent-green hover:underline font-medium">You can activate your cyber defense whenever you're ready.</a></p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 13: FAQ — VARIANT B -->
+<!-- ============================================ -->
+<section id="faq" class="bg-[#fafbfe]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="text-center mb-12">
+      <h2 class="text-2xl sm:text-3xl font-medium text-gray-900 mb-4">What Cyber-Savvy Homeowners Ask Before They Enroll</h2>
+      <p class="text-gray-600 font-light max-w-2xl mx-auto">Straight answers to the hardest questions about cyber-enabled title fraud and Home Title Lock's Cyber Defense system.</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-3">
+
+      <!-- Q1 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">Is cyber-enabled title fraud actually real? Four real estate lawyers told me they have never seen a case.</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>Cyber-enabled property crime is documented at every level of government. Six states have passed emergency title fraud legislation in the last three years. The FBI's IC3 receives thousands of real estate cyber fraud complaints annually, and FinCEN's Beneficial Ownership rule signals federal recognition that property records are a cybersecurity vulnerability. AI-generated document forgeries surged from 500,000 in 2023 to a projected 8 million by 2025. Most attorneys have not encountered it because victims typically discover the fraud months or years after filing — by then, it is a civil litigation matter, not a real estate closing. The crime is real. The detection gap is what makes it invisible to attorneys who only see transactions at closing.</p>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">The FTC published a consumer alert saying title lock services are 'a ploy to scare you.' How do you respond to that?</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>The FTC alert from August 2024 was directed at companies using fabricated FBI quotes, fake victim stories, and manufactured urgency to sell monitoring services. That criticism was deserved — the industry earned it. Home Title Lock's cybersecurity rebrand exists because of that reckoning. We do not claim to prevent fraud. We do not fabricate threat statistics. We do not use countdown timers or scare tactics. What we provide is documented: continuous cyber monitoring of public property records, verified alerts when anomalies are detected, and expert restoration response backed by up to $1,000,000 in incident support. The FTC's concern was about deceptive marketing, not about whether property record monitoring has value. Six states passed legislation recognizing the cyber threat to property records — that is not a marketing claim.</p>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">Can I just use the free county recorder alert instead of paying for cyber defense?</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>County alert systems notify you that a document was recorded — after the fact, often weeks later, with no verification of whether the filing is legitimate and no response capability if it is not. Home Title Lock's Cyber Monitoring scans national property databases continuously, flags anomalies within hours, verifies threats before alerting you, and deploys restoration specialists if fraud is confirmed. County alerts are a notification. Cyber defense is monitoring, verification, and response. They serve different functions. We recommend using both — county alerts as a baseline, cyber defense as the active protection layer.</p>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">What does Home Title Lock's Cyber Defense actually do?</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>Home Title Lock operates a three-layer cyber defense system called TripleLock. Layer 1 — Cyber Monitoring: proprietary technology continuously scans national property databases for unauthorized changes to your ownership records. Layer 2 — Real-Time Cyber Alerts: when an anomaly is detected, it is verified before you receive notification — no false alarm panic. Layer 3 — Cyber Restoration & Recovery: if fraud is confirmed, Home Title Lock deploys restoration specialists — attorneys and legal professionals — backed by up to $1,000,000 in incident response support. One subscriber's family had a fraudulent deed filing detected through our cyber alert system. Within two weeks, the deed was restored to their parents' name.</p>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">Does my title insurance already protect me from cyber-enabled title fraud?</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>Title insurance covers defects that existed before you purchased your home — liens, recording errors, prior ownership disputes. Cyber-enabled title fraud happens after closing, when criminals exploit online public records to forge new deeds on properties you already own. Title insurance was not designed for this threat. Home Title Lock's Cyber Defense covers what happens after you buy — continuous monitoring of your ownership records against unauthorized digital filings. The two are complementary. Your title insurance protects the past. Cyber defense protects the future.</p>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">How fast does the Cyber Monitoring system actually detect a fraudulent filing?</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>Home Title Lock's Cyber Monitoring is designed to detect anomalies in your property records within hours of a filing — not days or weeks. County recorder notification systems, by comparison, typically deliver alerts one to four weeks after a document is recorded. One subscriber reported that the system flagged a test filing rapidly, confirming the monitoring was active and responsive. As they put it: "That was a great test. They are on the ball."</p>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">What happens if cyber-enabled fraud IS detected on my title?</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>Home Title Lock activates the third layer of TripleLock — Cyber Restoration & Recovery. Restoration specialists, including attorneys who handle property fraud cases, are deployed on your behalf. Home Title Lock provides up to $1,000,000 in incident response support to fund legal costs, court filings, and deed restoration. In one documented case, a subscriber's family had a fraudulent filing detected and the deed was restored to the rightful owners within two weeks. Without early detection, the same scenario typically costs $50,000 to $150,000 and takes two to five years to resolve in court.</p>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="faq-item bg-white rounded-md shadow-md border border-gray-100 overflow-hidden cursor-pointer" onclick="this.classList.toggle('open')">
+        <div class="flex items-center justify-between px-6 py-5">
+          <h3 class="font-medium text-gray-900 text-sm sm:text-base pr-4">Is $19.95 per month worth it for cyber defense on my home?</h3>
+          <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </div>
+        <div class="faq-answer px-6 text-gray-600 font-light text-sm leading-relaxed">
+          <p>$19.95 per month is $0.66 per day. The average title fraud legal battle costs $50,000 to $150,000 and lasts two to five years. Early detection through Home Title Lock's Cyber Monitoring collapsed one family's exposure from that six-figure nightmare into a two-week resolution. You are not paying $19.95 for monitoring. You are paying $0.66 per day for the difference between a $200 administrative correction and a $150,000 legal crisis. The first 14 days are free.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Post-FAQ CTA -->
+    <div class="text-center mt-12">
+      <a href="#pricing" class="cta-primary text-white font-semibold uppercase tracking-widest rounded px-8 py-5 text-sm sm:text-base inline-block">
+        Try Cyber Defense Free for 14 Days
+      </a>
+      <p class="text-gray-500 text-sm font-light mt-3">No credit card required. Cancel anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 14: CLOSE — VARIANT B -->
+<!-- ============================================ -->
+<section id="close" class="bg-navy">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-medium text-white text-center mb-10">Two Cyber Defense Paths</h2>
+
+      <p class="text-gray-300 font-light leading-relaxed mb-8">
+        At this point, you know how cyber-enabled title fraud works. You know that public property records sit in digital systems with no identity verification. You know that AI-generated forgeries are accelerating the threat. And you know that most homeowners discover the damage months or years after it happens.
+      </p>
+
+      <p class="text-gray-300 font-light leading-relaxed mb-10">From here, there are two paths.</p>
+
+      <!-- Two Paths -->
+      <div class="grid sm:grid-cols-2 gap-6 mb-12">
+        <div class="rounded-md border border-red-400/30 bg-red-400/5 p-6 sm:p-8">
+          <p class="text-red-400 font-semibold text-sm uppercase tracking-widest mb-4">Path One: No Cyber Defense</p>
+          <p class="text-gray-300 font-light text-sm leading-relaxed">
+            Hope that nobody targets your property records. If they do, hire an attorney. Spend $50,000 to $150,000 over two to five years trying to prove you still own your home. Join the families who found out too late that nobody was watching.
+          </p>
+        </div>
+        <div class="rounded-md border border-accent-green/30 bg-accent-green/5 p-6 sm:p-8">
+          <p class="text-accent-green font-semibold text-sm uppercase tracking-widest mb-4">Path Two: Activate Cyber Defense Today</p>
+          <p class="text-gray-300 font-light text-sm leading-relaxed">
+            Five minutes to set up. Fourteen days free. Home Title Lock's TripleLock system begins Cyber Monitoring your property records immediately. If anything changes, you receive a Real-Time Cyber Alert. If fraud is confirmed, restoration specialists deploy with up to $1,000,000 in incident response support.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-gray-400 font-light text-center mb-2">One subscriber's family chose Path Two. A fraudulent filing was detected through our cyber alert system. Within two weeks, the deed was back in their parents' name.</p>
+
+      <blockquote class="text-center my-8">
+        <p class="text-white text-lg sm:text-xl font-medium italic">"Within about two weeks the deed was put back in my parents' name."</p>
+      </blockquote>
+
+      <p class="text-gray-400 font-light text-center mb-10">The only question left: do you want cyber defense watching your home's ownership records, or do you not?</p>
+
+      <!-- CTA -->
+      <div class="text-center">
+        <a href="#pricing" class="cta-primary text-white font-semibold uppercase tracking-widest rounded px-10 py-5 text-base inline-block">
+          Activate Your Cyber Defense Now
+        </a>
+        <p class="text-gray-500 text-sm font-light mt-3">5-minute setup. 14 days free. $19.95/month after.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 15: P.S. — VARIANT B -->
+<!-- ============================================ -->
+<section id="ps" class="bg-white">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-12 sm:py-16">
+    <div class="max-w-3xl mx-auto space-y-6 text-gray-700 font-light leading-relaxed">
+      <p>
+        <strong class="font-medium text-gray-900">P.S.</strong> Every day without cyber defense is a day a fraudulent filing on your property could go undetected. That is not a scare tactic. That is how digital property records work when no one is monitoring them.
+      </p>
+      <p>
+        Home Title Lock's Cyber Defense Plan costs $0.66 per day. The first 14 days are free. If cyber-enabled fraud is ever detected on your title, the Cyber Defense Guarantee backs you with up to $1,000,000 in restoration support.
+      </p>
+      <p>
+        Your home is likely the most valuable asset you own. Sixty-six cents per day to deploy continuous cyber monitoring on its ownership records is not a cost. It is the definition of a reasonable cyber defense investment. <a href="#pricing" class="text-accent-green hover:underline font-medium">Check your cyber defense status — free &rarr;</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- FOOTER -->
+<!-- ============================================ -->
+<footer class="bg-navy">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <!-- Brand Column -->
+      <div>
+        <img src="images/home-title-lock-logo-footer.png" alt="Home Title Lock" class="h-10 mb-4">
+        <p class="text-gray-400 text-sm font-light leading-relaxed">Cyber defense for your home's most valuable asset. TripleLock monitoring detects, verifies, and responds to cyber-enabled title fraud.</p>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <p class="text-gray-200 font-medium text-sm mb-4">Cyber Defense</p>
+        <ul class="space-y-2">
+          <li><a href="#how-it-works" class="text-gray-400 text-sm font-light hover:text-white transition-colors">How It Works</a></li>
+          <li><a href="#features" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Three Defense Pillars</a></li>
+          <li><a href="#pricing" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="#guarantee" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Cyber Defense Guarantee</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-gray-200 font-medium text-sm mb-4">Learn</p>
+        <ul class="space-y-2">
+          <li><a href="#threat-landscape" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Cyber Threat Landscape</a></li>
+          <li><a href="#stories" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Real Cases</a></li>
+          <li><a href="#faq" class="text-gray-400 text-sm font-light hover:text-white transition-colors">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-gray-200 font-medium text-sm mb-4">Company</p>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 text-sm font-light hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Contact</a></li>
+          <li><a href="#" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-400 text-sm font-light hover:text-white transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Media logos in footer -->
+    <div class="border-t border-white/10 pt-8 mb-8">
+      <p class="text-gray-500 text-xs uppercase tracking-widest text-center mb-6">As Featured On</p>
+      <div class="flex items-center justify-center gap-6 sm:gap-10 flex-wrap">
+        <img src="images/featured-on/white/cbs-w256.png" alt="CBS" class="h-6 sm:h-8 opacity-50" loading="lazy">
+        <img src="images/featured-on/white/nbc-w256.png" alt="NBC" class="h-6 sm:h-8 opacity-50" loading="lazy">
+        <img src="images/featured-on/white/abc-w96.png" alt="ABC" class="h-6 sm:h-8 opacity-50" loading="lazy">
+        <img src="images/featured-on/white/fox-w128.png" alt="Fox" class="h-6 sm:h-8 opacity-50" loading="lazy">
+        <img src="images/featured-on/white/ktla-w256.png" alt="KTLA" class="h-6 sm:h-8 opacity-50" loading="lazy">
+        <img src="images/featured-on/white/wgn-w256.png" alt="WGN" class="h-6 sm:h-8 opacity-50" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-white/10 pt-8 text-center">
+      <p class="text-gray-500 text-xs font-light">&copy; 2026 Home Title Lock. All rights reserved. TripleLock is a trademark of Home Title Lock.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================ -->
+<!-- SCRIPTS -->
+<!-- ============================================ -->
+<script>
+  // Smooth scroll for anchor links with fixed nav offset
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        const navHeight = 80;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
